@@ -320,6 +320,9 @@ dir {
 			line-height: 1.8em;	
 		}
 		.family {
+			.family-member {
+				text-align: center;
+			}
 			h4 {
 				margin: 10px 0;
 				text-align: center;
@@ -331,6 +334,7 @@ dir {
 			}
 			img {
 				margin-top: 20px;
+				max-width: 320px;
 			}
 		}
 	}
@@ -341,6 +345,7 @@ dir {
 			font-size: 2em;
 		}
 		.skillset {
+			margin-bottom: 40px;
 			.skill-level{
 				position: relative;
 				background-color: $white-brown;
@@ -389,6 +394,7 @@ dir {
 			}
 		}
 		.self-promotion {
+			margin-bottom: 40px;
 			.passion {
 				font-size: 1.8em;
 				font-weight: 600;
@@ -501,6 +507,54 @@ dir {
 		}
 		a {
 			color: $blue;
+		}
+		.social-links {
+			text-align: center;
+			margin: 40px 0;
+			.social-link {
+				width: 100px;
+				height: 100px;
+				display: inline-block;
+				@media (min-width: 768px) {
+					
+				}
+				@media (min-width: 992px) {
+					width: 80px;
+					height: 80px;
+				}
+				@media (min-width: 1200px) {
+					width: 100px;
+					height: 100px;
+				}
+				.social-icon {
+					width: 100px;
+					height: 100px;
+					display: inline-block;
+					transition: background-position 0.5s ease;
+					opacity: 50%;
+					@media (min-width: 992px) {
+						width: 80px;
+						height: 80px;
+						&.fb, &.tw, &.gp, &.li, &.gh { background-size: 80px; }
+					}
+					@media (min-width: 1200px) {
+						width: 100px;
+						height: 100px; 
+						&.fb, &.tw, &.gp, &.li, &.gh { background-size: 100px; }
+					}
+				}
+				.fb { background: url(../assets/images/icons/fb-sprite.png) no-repeat 0 100%; }
+				.tw { background: url(../assets/images/icons/tw-sprite.png) no-repeat 0 100%; }
+				.gp { background: url(../assets/images/icons/gp-sprite.png) no-repeat 0 100%; }
+				.li { background: url(../assets/images/icons/li-sprite.png) no-repeat 0 100%; }
+				.gh { background: url(../assets/images/icons/gh-sprite.png) no-repeat 0 100%; }
+				
+			}
+			.social-link:hover {
+				.social-icon {
+					background-position: 0 0;
+				}
+			}
 		}
 		.colophon {
 			.popover {
