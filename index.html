@@ -1,23 +1,122 @@
 ---
-layout: default
+layout: homepage
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<header id="header" class="header header-home">
+  <div class="container headline-wrapper">
+    <div class="headline">
+      <img src="/assets/images/dl-logo-2014-w.png" alt="">
+      <h1>Donald Livingston</h1>
+      <h2>Web Developer, Digital Craftsman, Technology Enthusiast</h2>
+      <ul class="headline-nav">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="/work">Work</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section id="about" class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2><span>About Me</span></h2>
+			</div>  
+			<div class="col-md-offset-2 col-md-8 col-sm-10 col-sm-offset-1">
+				<img src="/assets/images/donaldlivingston-aboutme.jpg" alt="" class="img-rounded">
+				<p>I'm a Front-End Web Developer frequently found in the environs of Salt Lake City, Utah. I'm a huge Technology &amp; Science Geek and my love for learning and finding out how things work borders on the obsessive. When not in front of a computer screen, I am usually found in the company of my wife Eliese, playing Lego with my son Kyler, or out walking my dogs Murphy and Gidget. </p>
+			</div>
+		</div>
+		<div class="row">
+			<h3>My Family</h3>
+			<div class="col-md-12 family">
+				<div class="family-member col-md-3 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+					<img src="/assets/images/about-eliese.jpg" alt="" class="img-rounded">
+					<h4>Eliese</h4>
+					<p>My beautiful, loving, and supportive wife</p>
+				</div>
+				<div class="family-member col-md-3 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+					<img src="/assets/images/about-kyler.jpg" alt="" class="img-rounded">
+					<h4>Kyler</h4>
+					<p>My adorable 4-year-old son.</p>
+				</div>
+				<div class="family-member col-md-3 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+					<img src="/assets/images/about-murphy.jpg" alt="" class="img-rounded">
+					<h4>Murphy</h4>
+					<p>Top Dog in charge of fur production and head of human-canine relations. </p>
+				</div>
+				<div class="family-member col-md-3 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+					<img src="/assets/images/about-gidget.jpg" alt="" class="img-rounded">
+					<h4>Gidget</h4>
+					<p>Emergency backup canine, and world-class snuggler. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="skills" class="skills">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2><span>Skills</span></h2>
+			</div>  
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>My Primary Skillset</h3>
+				<div class="skillset">
+					<div class="skill-level">
+						<h4>HTML5 &amp; CSS3</h4><span class="html-css">95%</span>
+					</div>
+					<div class="skill-level">
+						<h4>Responsive Web Design</h4><span class="responsive-design">80%</span>
+					</div>
+					<div class="skill-level">
+						<h4>jQuery &amp; JavaScript</h4><span class="jquery-javascript">75%</span>
+					</div>
+					<div class="skill-level">
+						<h4>Bootstrap</h4><span class="bootstrap">90%</span>
+					</div>
+					<div class="skill-level">
+						<h4>Adobe Creative Suite</h4><span class="adobe">85%</span>
+					</div>
+					<div class="skill-level">
+						<h4>PHP</h4><span class="php">60%</span>
+					</div>
+					<div class="skill-level">
+						<h4>Databases/MySQL</h4><span class="databases">50%</span>
+					</div>
+					<div class="skill-level">
+						<h4>MVC Frameworks</h4><span class="mvc">60%</span>
+					</div>
+					<div class="skill-level">
+						<h4>UI/UX Design</h4><span class="ui-ux">70%</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 self-promotion">
+				<h3>Shameless Self-Promotion</h3>
+				<p class="passion">
+					This is the part where I'm supposed to say that I'm &ldquo;passionate&rdquo; about Web Design &amp; Development. 
+					I personally feel that the term passion gets thrown around a little too loosely when referring to ones employment. 
+				</p>
+				<p>
+					What I will say is that I've been a professional front-end web developer and web designer for more than 5 years. 
+					I enjoy what I do and I pride myself on producing clean, readable, maintainable code, as well as attractive and usable web designs. 
+					<!-- I work well as part of a team, but I can also manage  -->
+					I excel in balancing my "right-brained" creative half with my "left-brained" logical half
+					<a href="#" data-toggle="popover" data-placement="top" title="" data-content="Yes, I know the left-brain/right-brain dichotomy has been mostly (or at least partly) disproven. Nevertheless, some people tend to favor creative tasks, while others prefer analytical and logical tasks."><sup>*</sup></a>
+					, and I'm obsessive about learning about new technologies and techniques.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>

@@ -6,25 +6,36 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family: 	Helvetica, Arial, sans-serif;
+$base-font-size:   	16px;
+$small-font-size:  	$base-font-size * 0.875;
+$base-line-height: 	1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     	30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       	#111;
+$background-color: 	#fdfdfd;
+$brand-color:      	#2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       	#828282;
+$grey-color-light: 	lighten($grey-color, 40%);
+$grey-color-dark:  	darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:          	600px;
+$on-laptop:        	800px;
 
+$black: 			#000000;
+$white: 			#ffffff;
+$offblack: 			#0f0f0f;
+$vitaminc: 			#FF9900;
+$route66: 			#666666;
+$route33: 			#333333;
 
+$white-brown: 		#DCDBCF;
+$blue-grey: 		#34363E;
+$midnight: 			#2C2D35;
+$offwhite: 			#F0F0F0;
+$blue: 				#448CCB;
 
 // Using media queries with like this:
 // @include media-query($palm) {
@@ -45,5 +56,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "dl-style"
 ;
