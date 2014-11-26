@@ -409,9 +409,9 @@ dir {
 		.caveat { font-size: 1em; }
 	}
 	.work {
-		background-color: $midnight;
+		//background-color: $midnight;
 		h2 {
-			color: $offwhite;	
+			//color: $offwhite;	
 		}
 		.work-row {
 		}
@@ -485,6 +485,28 @@ dir {
 				background-position: 0 0;
 				background-size: 120% auto;
 			}
+		}
+	}
+	.blog {
+		h2.blog-heading {
+			font-size: 2.4rem;
+			text-transform: none;
+		}
+		p, .post-list {
+			font-size: 1.6rem;
+			line-height: 1.8;
+		}
+	}
+	.post {
+		font-size: 1.6rem;
+		line-height: 1.8;
+	}
+	.contact {
+		font-size: 1.6rem;
+		line-height: 1.8;
+		p {
+			font-size: 1.6rem;
+			line-height: 1.8;
 		}
 	}
 	.site-footer {
