@@ -5,6 +5,15 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+	
+	<!-- If Internet Explorer Version is less than 9 redirect to IE-Fail page -->
+	<!--[if lt IE 9 ]>	<script> window.location.replace("http://www.donaldlivingston.com/ie-fail"); </script> <![endif]-->
+
+	<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png"/>
+	<link rel="icon" href="/favicon.ico">
+
 	<!-- Bootstrap Stylesheets -->
 	<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" >
 	<!-- Supersized -->
