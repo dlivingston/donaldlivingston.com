@@ -10,9 +10,9 @@ body {
 }
 body {
 	background: $offwhite;
-	background: url(../assets/images/backgrounds/dl-background04.jpg) fixed no-repeat;
-	background-size: auto 100%;
-	background-position: center top;
+	// background: url(../assets/images/backgrounds/dl-background04.jpg) fixed no-repeat;
+	// background-size: auto 100%;
+	// background-position: center top;
 	color: $blue-grey;
 	font-size: 10px;
 	font-family: 'Roboto', Arial, sans-serif;
@@ -511,6 +511,7 @@ dir {
 	.contact {
 		font-size: 1.6rem;
 		line-height: 1.8;
+		min-height: 80%;
 		p {
 			font-size: 1.6rem;
 			line-height: 1.8;
