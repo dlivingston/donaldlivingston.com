@@ -616,6 +616,72 @@ dir {
 		}
 	}
 	
+	&.four-o-four {
+		.navbar {
+			margin-top: 0;
+			background-color: rgba(30,30,30,0.35);
+			border: 0;
+			position: relative;
+		}
+		.main {
+			background-color:rgba(30,30,30,0.35);
+			border-bottom: 0;
+			min-height: 90%;	
+			text-align: center;
+			color: $offwhite;
+			.dl-logo {
+				max-width: 300px;
+				width: 80%;
+				margin: 50px auto 25px;
+			}
+			h1,h2,h3 {
+				color: $offwhite;
+			}
+			h1 {
+				font-size: 6rem;
+			}
+			ul, ul li {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-size: 1.4rem;
+				text-align: center;
+			}
+			p {
+				font-size: 1.4rem;
+				text-align: center;
+			}
+			.btn-default {
+				background-color: transparent;
+				border: 1px solid $offwhite;
+				color: $offwhite;
+				font-size: 1.8rem;
+				margin: 25px auto;
+				padding: 10px 15px;
+				&:hover {
+					color: $blue;
+					border-color: $blue;
+				}
+			}
+		}
+		footer {
+			color: $offwhite;
+			background-color: rgba(30,30,30,0.35);
+			border: none;
+			min-height: 10%;
+			p {
+				font-size: 1.4rem;
+				color: $offwhite;
+			}
+			a {
+				color: $offwhite;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+	}
+
 	@media (max-width: 991px) {
 	    .navbar-header {
 	        float: none;
