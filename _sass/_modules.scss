@@ -1,0 +1,52 @@
+.browser-wrapper {
+	border: 2px solid $blue-grey;
+	border-radius: 6px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	.browser-top {
+		border-bottom: 2px solid $blue-grey;
+		padding: 10px;
+		position: relative;
+		height: 44px;
+		overflow: hidden;
+		ul {
+			margin: 0;
+			padding: 0;
+			display: inline;
+			position: absolute;
+			left: 10px;
+			top: 8px;
+			li {
+				display: inline-block;
+				border: 2px solid $blue-grey;
+				border-radius: 50%;
+				background: $blue-grey;
+				width: 10px;
+				height: 10px;
+				margin: 0 2px;
+			}
+		}
+		span.url {
+			border: 2px solid $blue-grey;
+			border-radius: 3px;
+			position: absolute;
+			left: 70px;
+			right: 10px;
+			top: 10px;
+			bottom: 10px;
+			padding-left: 10px;
+			font-size: 1.2rem;
+			//height: 24px;
+			a, a:visited { color: $midnight; }
+			a { display: block; width: 100%; }
+			&:hover {
+				background: $blue-grey;
+				text-decoration: underline;
+				a, a:visited { 
+					color: $white-brown; 
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

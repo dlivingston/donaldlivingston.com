@@ -5,6 +5,7 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	
 	<!-- If Internet Explorer Version is less than 9 redirect to IE-Fail page -->
 	<!--[if lt IE 9 ]>	<script> window.location.replace("http://www.donaldlivingston.com/ie-fail"); </script> <![endif]-->
@@ -14,16 +15,15 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png"/>
 	<link rel="icon" href="/favicon.ico">
 
-	<!-- Bootstrap Stylesheets -->
-	<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" >
+	<!-- Google Font -->
+	<link rel='stylesheet'href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300'>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<!-- Supersized -->
 	<link rel="stylesheet" href="{{ "/css/supersized.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/supersized.shutter.css" | prepend: site.baseurl }}">
-
-	
-	<!-- Google Font -->
-	<link rel='stylesheet'href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300'>
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<!-- jQuery -->
     <link rel="stylesheet" href="{{ "/css/jquery.fancybox.css" | prepend: site.baseurl }}" />
+	
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 </head>

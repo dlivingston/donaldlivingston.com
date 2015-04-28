@@ -2,6 +2,9 @@
 
 /*= TYPOGRAPHY
 ---------------------------------------------------------------------------------------------- */
+html {
+	font-size: 10px;
+}
 html,
 body {
 	height: 100%;
@@ -10,12 +13,10 @@ body {
 }
 body {
 	background: $offwhite;
-	// background: url(../assets/images/backgrounds/dl-background04.jpg) fixed no-repeat;
-	// background-size: auto 100%;
-	// background-position: center top;
+
 	color: $blue-grey;
-	font-size: 10px;
-	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 1.6rem;
+	font-family: $sans;
 	font-weight: 300;
 	@media (min-width: 768px) {
 		background-size: 100%;
@@ -27,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: $sans;
 	font-weight: 500;
 	color: $midnight;
 	margin-top: 0;
@@ -300,7 +301,7 @@ dir {
 		border-bottom: 1px solid $white-brown;
 		padding: 60px 0;
 		h2 {
-			font-size: 30px;
+			font-size: 3rem;
 			font-weight: 300;
 			text-transform: uppercase;
 			text-align: center;
@@ -319,12 +320,12 @@ dir {
 			font-weight: 400;
 			padding: 10px 0;
 			text-transform: uppercase;
-			font-size: 2.4em;
+			font-size: 2.4rem;
 		}
 		p {
 			margin: 20px 0;
-			font-size: 1.6em;
-			line-height: 1.8em;	
+			font-size: 1.6rem;
+			line-height: 1.5;	
 		}
 		.family {
 			.family-member {
@@ -333,7 +334,7 @@ dir {
 			h4 {
 				margin: 10px 0;
 				text-align: center;
-				font-size: 1.8em;
+				font-size: 1.8rem;
 			}
 			p {
 				margin: 10px 0;
@@ -349,7 +350,7 @@ dir {
 		h3 { 
 			text-transform: uppercase; 
 			font-weight: 300; 
-			font-size: 2em;
+			font-size: 2rem;
 		}
 		.skillset {
 			margin-bottom: 40px;
@@ -361,7 +362,7 @@ dir {
 				margin: 10px 0;
 				h4 {
 					color: $offwhite;
-					font-size: 1.4em;
+					font-size: 1.4rem;
 					position: absolute;
 					top: 5px;
 					left: 8px;
@@ -376,6 +377,7 @@ dir {
 					text-indent: -99999px;
 					visibility: hidden;
 					width: 0px;
+					font-size: 1rem;
 				}
 			}
 		}
@@ -383,121 +385,103 @@ dir {
 			.skill-level {
 				span {
 					visibility: visible; 
-					-webkit-transition: width 2s ease-in-out 0; 
-					-moz-transition: width 2s; 
-					-o-transition: width 2s ease-in-out 0; 
-					-ms-transition: width 2s ease-in-out 0; 
-					transition: width 2s ease-in-out 0;
+					//-webkit-transition: width 2s ease-in-out 0; 
+					//-moz-transition: width 2s ease-in-out 0; 
+					//-o-transition: width 2s ease-in-out 0; 
+					//-ms-transition: width 2s ease-in-out 0; 
+					transition: width 1.5s ease-out;
 				}
-				.html-css { width: 95%; }
+				.html-css { width: 90%; }
 				.responsive-design { width: 80%; }
-				.jquery-javascript { width: 75%; }
-				.bootstrap { width: 90%; }
-				.adobe { width: 85%; }
+				.jquery-javascript { width: 70%; }
+				.bootstrap { width: 80%; }
+				.adobe { width: 80%; }
 				.php { width: 60%; }
 				.databases { width: 50%; }
 				.mvc { width: 60%; }
 				.ui-ux { width: 70%; }
+				.lego { width: 80%; }
 			}
 		}
 		.self-promotion {
 			margin-bottom: 40px;
 			.passion {
-				font-size: 1.8em;
+				font-size: 1.8rem;
 				font-weight: 600;
 				font-style: italic;
 				font-family: Georgia, serif;
 			}
 		}
 		p {
-			font-size: 1.6em;
-			line-height: 1.8em;
+			font-size: 1.6rem;
+			line-height: 1.5;
 		}
 		.caveat { font-size: 1em; }
 	}
 	.work {
-		//background-color: $midnight;
+		h1 {
+			font-size: 3rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		h1 span {
+			border-bottom: 2px solid $blue;
+		}
 		h2 {
-			//color: $offwhite;	
+			font-size: 2.8rem;
+			font-weight: 300;
+			margin-bottom: 10px;
+			text-align: left;
+		}
+		h3 {
+			font-size: 2rem;
+			margin-bottom: 0;
 		}
 		.work-row {
+			padding: 30px 0;
 		}
-		.work-item {
-			padding: 0;
-			height: 200px;
-			max-height: 200px;
-			position: relative;
-			overflow: hidden;
-			.work-bkg {
-				height: 100%;
-				width: 100%;
-				background-color: $midnight;
-				-webkit-transition: all 2s ease; 
-				-moz-transition: all 2s ease; 
-				-o-transition: all 2s ease; 
-				-ms-transition: all 2s ease; 
-				transition: all 2s ease;
-				background-size: 100%;
-			}
-			.work-bkg:hover {
-				transform: scale(1.25);
-				-webkit-transition: all 2s ease; 
-				-moz-transition: all 2s ease; 
-				-o-transition: all 2s ease; 
-				-ms-transition: all 2s ease; 
-				transition: all 2s ease;
-			}
-			.work-bkg.zagg-1 {
-				background: url(../assets/images/work/zagg/zagg-home-full.jpg) no-repeat;
-				background-position: -10px -10px;
-				background-size: 120% auto;
-			}
-			.work-bkg.zagg-2 {
-				background: url(../assets/images/work/zagg/zagg-is-full.jpg) no-repeat;
-				background-size: 120% auto;
-				background-position: -10px -20px;
-			}
-			.work-bkg.zagg-3 {
-				background: url(../assets/images/work/zagg/zagg-autofit-full.jpg) no-repeat;
-				background-size: 120% auto;
-				background-position: 0 -60px;
-			}
-			.work-bkg.overstock-1 {
-				background: url(../assets/images/work/overstock/overstock-artisans-full.jpg) no-repeat;
-				background-position: 0px -10px;
-				background-size: 120% auto;
-			}
-			.work-bkg.overstock-2 {
-				background: url(../assets/images/work/overstock/overstock-fallclearance-full.jpg) no-repeat;
-				background-position: -10px -30px;
-				background-size: 120% auto;
-			}
-			.work-bkg.overstock-3 {
-				background: url(../assets/images/work/overstock/overstock-25days-full.jpg) no-repeat;
-				background-position: -32px -60px;
-				background-size: 120% auto;
-			}
-			.work-bkg.xennsoft-1 {
-				background: url(../assets/images/work/xennsoft/xennsoft-nucerity.jpg) no-repeat;
-				background-position: -10px 0;
-				background-size: 120% auto;
-			}
-			.work-bkg.xennsoft-2 {
-				background: url(../assets/images/work/xennsoft/xennsoft-wakeup.jpg) no-repeat;
-				background-position: 0 0;
-				background-size: 120% auto;
-			}
-			.work-bkg.srs-1 {
-				background: url(../assets/images/work/srs/srs-directhit.jpg) no-repeat;
-				background-position: 0 0;
-				background-size: 120% auto;
+		h4 {
+			display: inline-block;
+			font-size: 1.6rem;
+			margin-bottom: 5px;
+
+		}
+		p {
+			margin: 15px 0;
+		}
+		.skills {
+			margin: 0;
+			position: 0;
+			li {
+				display: inline-block;
+				margin-right: 5px;
+				color: $offwhite;
+				background-color: $groovyblue;
+				padding: 2px 5px;
+				border-radius: 3px;
+				margin-bottom: 5px;
+				font-size: 1.4rem;
 			}
 		}
 	}
 	.blog {
+		h1 {
+			font-size: 3rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		h1 span {
+			border-bottom: 2px solid $blue;
+		}
 		h2.blog-heading {
 			font-size: 2.4rem;
 			text-transform: none;
+			font-family: $serif;
+			font-style: italic;
 		}
 		p, .post-list {
 			font-size: 1.6rem;
@@ -515,6 +499,74 @@ dir {
 		p {
 			font-size: 1.6rem;
 			line-height: 1.8;
+			text-align: center;
+			&.required {
+				font-size: 1.2rem;
+				line-height: 1.5;
+				font-style: italic;
+			}
+		}
+		.form {
+			background-color: $midnight;
+			color: $offwhite;
+			margin-bottom: 50px;
+			padding: 20px 10%;
+			label {
+				display: block;
+				font-weight: 300;
+				line-height: 1.4;
+				margin: 0;
+			}
+			input[type=text], textarea {
+				background-color: $white-brown;
+				color: $midnight;
+				border: none;
+				display: block;
+				width: 100%;
+				margin-bottom: 20px;
+				padding: 0 5px;
+			}
+			textarea {
+				height: 120px;
+			}
+			.btn {
+				color: $offwhite;
+				border: 1px solid $offwhite;
+				background-color: transparent;
+				&:hover {
+					color: $groovyblue;
+					border-color: $groovyblue;
+				}
+			}
+		}
+		.social-links {
+			text-align: center;
+			margin-bottom: 40px;
+			.social-link {
+				width: 80px;
+				height: 80px;
+				display: inline-block;
+				margin: 5px;
+				padding: 5px;
+				border: 2px solid $blue-grey;
+				border-radius: 50%;
+				transition: transform 0.25s ease 0s;
+				svg {
+					width: auto;
+					path {
+						fill: $blue-grey;
+					}
+				}
+				&:hover {
+					transition: transform 0.25s ease 0s;
+					transform: scale(1.2);
+					color: $groovyblue;
+					border: 2px solid $groovyblue;
+					path {
+						fill: $groovyblue;
+					}
+				}
+			}	
 		}
 	}
 	.site-footer {

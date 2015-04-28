@@ -54,8 +54,10 @@ $blue: 				#448CCB;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+		"var",
         "base",
         "layout",
         "syntax-highlighting",
-        "dl-style"
+        "dl-style",
+        "modules"
 ;
