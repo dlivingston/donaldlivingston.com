@@ -569,6 +569,169 @@ dir {
 			}	
 		}
 	}
+	.resume {
+		h1 {
+			font-size: 3rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		h1 span {
+			border-bottom: 2px solid $blue;
+		}
+		section {
+			border: 0;
+			padding: 0;
+		}
+		.resume-inner {
+			border-top: 3px solid $midnight;
+			padding-top: 15px;
+			background-color: #FFFFFF;
+			box-shadow: 5px 5px 10px #666666;
+			h1 { 
+				font-size: 3.6rem; 
+				font-weight: 500;
+				margin-bottom: 0px;
+				margin-left: 20px;
+				margin-top: 15px;
+				@media (min-width: 768px) {
+					text-align: left;
+					margin-top: 5px;
+				}
+				@media (min-width: 992px) {
+					text-align: left;
+					margin-top: 15px;
+				}
+			}
+			h2 {
+				
+				font-size: 2.4rem;
+				margin-left: 20px;
+				margin-bottom: 0;
+
+				@media (min-width: 768px) {
+					text-align: left;
+				}
+				@media (min-width: 992px) {
+					text-align: left;
+				}
+			}
+			h3 {
+				font-size: 2.1rem;
+				font-weight: 100;
+				text-decoration: underline;
+				text-transform: uppercase;
+			}
+			h4.company {
+				font-size: 1.9rem;
+				font-weight: 400;
+				margin-bottom: 0;
+				.dates {
+					font-size: 1.6rem;
+					font-weight: 200;
+					float: right;
+					text-align: right;
+				}
+
+			}
+			h4.title {
+				font-size: 1.7rem;
+				font-style: italic;
+				font-weight: 200;
+			}
+		}
+		.resume-header {
+			margin-bottom: 15px;
+			.left {
+
+			}
+			.right {
+				text-align: center;
+				.phone { margin: 0; }
+				@media (min-width: 768px) {
+					text-align: right;
+				}
+				@media (min-width: 992px) {
+					text-align: right;
+				}
+			}
+			.btn {
+				color: $midnight;
+				background: transparent;
+				border: 1px solid $midnight;
+				margin: 15px 0 5px;
+				@media (min-width: 768px) {
+					margin-top: 5px;
+				}
+				@media (min-width: 992px) {
+					margin-top: 15px;
+				}
+			}
+		}
+		.resume-body {
+			border-top: 1px solid $midnight;
+			padding-top: 15px;
+		}
+		.job {
+			margin-bottom: 30px;
+			border-bottom: 1px solid $midnight;
+		}
+		.skills {
+			table {
+				margin-bottom: 20px;
+				width: 100%;
+				tr {
+					.level {
+						text-align: right;
+					}
+					&.bar {
+						td {
+							height: 4px;
+							line-height: 4px;
+							span {
+								background-color: $groovyblue;
+								height: 4px;
+								line-height: 4px;
+								display: block;
+								margin-bottom: 10px;
+								&.nine { width: 90%; }
+								&.eight { width: 80%; }
+								&.seven { width: 70%; }
+								&.six { width: 60%; }
+								&.five { width: 50%; }
+								&.four { width: 40%; }
+								&.three { width: 30%; }
+								&.two { width: 20%; }
+							}
+						}
+						
+					}
+				}
+			}
+			.key {
+				width: 100%;
+			}
+		}
+		.dl-logo {
+			width: 100px;
+			display: block;
+			margin: 0 auto;
+			@media (min-width: 768px) {
+				float: left;
+				width: 75px;
+				margin: 0 15px 0 0;
+			}
+			@media (min-width: 992px) {
+				float: left;
+				margin: 0 15px 0 0;
+				width: 100px;
+			}
+			path {
+				fill: $midnight;
+			}
+		}
+	}
 	.site-footer {
 		background: $midnight;
 		color: $offwhite;
