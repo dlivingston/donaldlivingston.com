@@ -49,4 +49,36 @@
 			}
 		}
 	}
+	.cycle-slideshow {
+		.cycle-prev, .cycle-next {
+			background: rgba($offwhite, 0.7);
+			position: absolute;
+			top: 50%;
+			z-index: 500;
+			font-size: 2.8rem;
+			color: rgba($midnight, 0.7);
+			border: 2px solid;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: .8;
+			display: none;
+			opacity: 0;
+			@media (min-width: 768px) {
+				display: block;
+			}
+		}
+		.cycle-prev {
+			left: 5px;
+		}
+		.cycle-next {
+			right: 5px;
+		}
+		&:hover {
+			.cycle-prev, .cycle-next {
+				opacity: 1;
+			}
+		}
+	}
 }
