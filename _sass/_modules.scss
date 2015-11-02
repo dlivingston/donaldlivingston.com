@@ -42,14 +42,15 @@
 			&:hover {
 				background: $blue-grey;
 				text-decoration: underline;
-				a, a:visited { 
-					color: $white-brown; 
+				a, a:visited {
+					color: $white-brown;
 					text-decoration: underline;
 				}
 			}
 		}
 	}
 	.cycle-slideshow {
+		max-height: 450px;
 		.cycle-prev, .cycle-next {
 			background: rgba($offwhite, 0.7);
 			position: absolute;
@@ -79,6 +80,101 @@
 			.cycle-prev, .cycle-next {
 				opacity: 1;
 			}
+		}
+	}
+}
+.phone-wrapper {
+	border: 2px solid $blue-grey;
+	border-radius: 15px;
+	overflow: hidden;
+	margin: 0 auto 20px;
+	max-width: 300px;
+	height: 550px;
+	.cycle-slideshow {
+		border-top: 2px solid $blue-grey;
+		border-bottom: 2px solid $blue-grey;
+		height: 450px;
+		margin: 15px auto 0;
+		@media (min-width: 768px) {
+			border: 2px solid $blue-grey;
+			width: 290px;
+			border-radius: 6px;
+		}
+		.cycle-prev, .cycle-next {
+			background: rgba($offwhite, 0.7);
+			position: absolute;
+			top: 50%;
+			z-index: 500;
+			font-size: 2.8rem;
+			color: rgba($midnight, 0.7);
+			border: 2px solid;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: .8;
+			display: none;
+			opacity: 0;
+			@media (min-width: 768px) {
+				display: block;
+			}
+		}
+		.cycle-prev {
+			left: 5px;
+		}
+		.cycle-next {
+			right: 5px;
+		}
+		&:hover {
+			.cycle-prev, .cycle-next {
+				opacity: 1;
+			}
+		}
+	}
+	.phone-top {
+		span {
+			border: 2px solid $blue-grey;
+			width: 60px;
+			height: 10px;
+			display: block;
+			margin: 15px auto 0;
+			border-radius: 5px;
+		}
+	}
+	.phone-bottom {
+		span {
+			border: 2px solid $blue-grey;
+			width: 40px;
+			height: 40px;
+			display: block;
+			margin: 8px auto 0;
+			border-radius: 30px;
+		}
+	}
+}
+.work {
+	.nav-pills {
+		margin: 0 0 10px;
+		text-align: center;
+		li {
+			display: inline-block;
+			float: none;
+			a {
+				border: 1px solid $blue-grey;
+				color: $blue-grey;
+				padding: 5px 8px;
+				font-size: 1.2rem;
+			}
+			&.active {
+				a {
+					border: 2px solid $midnight;
+					color: $midnight;
+					background: transparent;
+					font-weight: 500;
+				}
+			}
+
+
 		}
 	}
 }

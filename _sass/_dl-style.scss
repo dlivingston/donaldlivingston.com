@@ -85,7 +85,7 @@ dir {
 		border-bottom: 1px solid $blue-grey;
 		box-shadow: none;
 		font-size: 2em;
-		-webkit-transition: all .3s ease; 
+		-webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
         transition: all .3s ease;
         min-height: 60px;
@@ -143,7 +143,7 @@ dir {
 	.navbar-nav > li > a {
 		color: $offwhite;
 		font-size: 1.6rem;
-		font-weight: 300;	
+		font-weight: 300;
 		text-transform: uppercase;
 		padding: 10px 15px;
 		margin: 9px 0;
@@ -171,7 +171,7 @@ dir {
 			top: 0;
 			left: 0;
 			@media (min-width: 768px) {
-				
+
 			}
 			@media (min-width: 992px) {
 				//width: 100%;
@@ -196,15 +196,15 @@ dir {
 			margin-top: -140px;
 			top: 50%;
 			.dl-logo { width: 160px; height: 160px; }
-			h1 { 
-				font-size: 2.8rem; 
+			h1 {
+				font-size: 2.8rem;
 				font-weight: 500;
-				margin: 10px 0; 
+				margin: 10px 0;
 				text-transform: uppercase;
 				text-align: center;
 				color: $offwhite;
 			}
-			h2 { 
+			h2 {
 				font-size: 1.8rem;
 				font-weight: 300;
 				color: $offwhite;
@@ -222,13 +222,13 @@ dir {
 			.headline-nav > li > a {
 				color: $offwhite;
 				font-size: 1.2rem;
-				font-weight: 300;	
+				font-weight: 300;
 				text-transform: uppercase;
 				padding: 5px 10px;
 				margin: 5px 2px;
 				border: 1px solid $offwhite;
 				border-radius: 5px;
-			} 
+			}
 			.headline-nav > li > a:hover {
 				color: $blue;
 				text-decoration: none;
@@ -236,7 +236,7 @@ dir {
 			}
 			@media (min-width: 600px) and (min-height: 540px) {
 				height: 480px;
-				margin-top: -260px;					
+				margin-top: -260px;
 				.dl-logo { width: 300px; height: 300px;  }
 				h1 {
 					font-size: 3.6rem;
@@ -257,7 +257,7 @@ dir {
 	}
 	.header.header-site {
 		height: 200px;
-		@media (min-width: 600px) and (min-height: 540px) { 
+		@media (min-width: 600px) and (min-height: 540px) {
 			height: 160px;
 		}
 		.headline {
@@ -276,7 +276,7 @@ dir {
 			}
 			.headline-nav {
 			}
-			@media (min-width: 600px) and (min-height: 540px) { 
+			@media (min-width: 600px) and (min-height: 540px) {
 				height: 140px;
 				margin-top: 0px;
 				top: 10px;
@@ -327,7 +327,7 @@ dir {
 		p {
 			margin: 20px 0;
 			font-size: 1.6rem;
-			line-height: 1.5;	
+			line-height: 1.5;
 		}
 		.family {
 			.family-member {
@@ -349,9 +349,9 @@ dir {
 		}
 	}
 	.skills {
-		h3 { 
-			text-transform: uppercase; 
-			font-weight: 300; 
+		h3 {
+			text-transform: uppercase;
+			font-weight: 300;
 			font-size: 2rem;
 		}
 		.skillset {
@@ -388,11 +388,11 @@ dir {
 		.skillset.animate {
 			.skill-level {
 				span {
-					visibility: visible; 
-					//-webkit-transition: width 2s ease-in-out 0; 
-					//-moz-transition: width 2s ease-in-out 0; 
-					//-o-transition: width 2s ease-in-out 0; 
-					//-ms-transition: width 2s ease-in-out 0; 
+					visibility: visible;
+					//-webkit-transition: width 2s ease-in-out 0;
+					//-moz-transition: width 2s ease-in-out 0;
+					//-o-transition: width 2s ease-in-out 0;
+					//-ms-transition: width 2s ease-in-out 0;
 					transition: width 1.5s ease-out;
 				}
 				.html-css { width: 90%; }
@@ -551,7 +551,7 @@ dir {
 				height: 80px;
 				display: inline-block;
 				margin: 5px;
-				padding: 5px;
+				padding: 15px;
 				border: 2px solid $blue-grey;
 				border-radius: 50%;
 				transition: transform 0.25s ease 0s;
@@ -570,7 +570,7 @@ dir {
 						fill: $groovyblue;
 					}
 				}
-			}	
+			}
 		}
 	}
 	.resume {
@@ -592,8 +592,8 @@ dir {
 			padding-top: 15px;
 			background-color: #FFFFFF;
 			box-shadow: 5px 5px 10px #666666;
-			h1 { 
-				font-size: 3.6rem; 
+			h1 {
+				font-size: 3.6rem;
 				font-weight: 500;
 				margin-bottom: 0px;
 				margin-left: 20px;
@@ -608,7 +608,7 @@ dir {
 				}
 			}
 			h2 {
-				
+
 				font-size: 2.4rem;
 				margin-left: 20px;
 				margin-bottom: 0;
@@ -708,7 +708,7 @@ dir {
 								&.two { width: 20%; }
 							}
 						}
-						
+
 					}
 				}
 			}
@@ -764,7 +764,7 @@ dir {
 				height: 50px;
 				display: inline-block;
 				margin: 5px;
-				padding: 5px;
+				padding: 10px;
 				border: 1px solid $offwhite;
 				border-radius: 50%;
 				transition: transform 0.25s ease 0s;
@@ -784,7 +784,7 @@ dir {
 					}
 				}
 			}
-			
+
 		}
 		.colophon {
 			.popover {
@@ -833,7 +833,7 @@ dir {
 			}
 		}
 	}
-	
+
 	&.four-o-four {
 		.navbar {
 			margin-top: 0;
@@ -844,7 +844,7 @@ dir {
 		.main {
 			background-color:rgba(30,30,30,0.35);
 			border-bottom: 0;
-			min-height: 90%;	
+			min-height: 90%;
 			text-align: center;
 			color: $offwhite;
 			.dl-logo {
@@ -926,7 +926,7 @@ dir {
 	        padding-bottom: 10px;
 	    }
 	    /* since 3.1.0 */
-	    .navbar-collapse.collapse.in { 
+	    .navbar-collapse.collapse.in {
 	        display: block!important;
 	    }
 	    .collapsing {
