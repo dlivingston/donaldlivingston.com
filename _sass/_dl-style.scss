@@ -482,6 +482,9 @@ dir {
 		}
 		p {
 			margin: 15px 0;
+			&.lead {
+				margin: 30px;
+			}
 		}
 		.skills {
 			margin: 0;
