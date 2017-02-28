@@ -3,10 +3,10 @@ layout: homepage
 ---
 <header id="header" class="header header-home">
   <div class="container headline-wrapper">
-    <div class="headline">
+    <div class="headline load-animation">
       {% include dl-logo.html %}
       <h1>Donald Livingston</h1>
-      <h2>Web Developer, Digital Craftsman, Technology Enthusiast</h2>
+      <h2>Web Developer, UI Designer, &amp; Digital Craftsman</h2>
       <ul class="headline-nav">
         <li>
           <a href="#about">About</a>
@@ -24,6 +24,10 @@ layout: homepage
     </div>
   </div>
 </header>
+<video playsinline loop autoplay muted id="bgvid" onloadeddata="videoLoaded()" poster="/assets/video/lines-of-white.jpg">
+	<source src="/assets/video/lines-of-white-720.mp4" type="video/mp4">	
+	<source src="/assets/video/lines-of-white-720.webm" type="video/webm">
+</video>
 <section id="about" class="about">
 	<div class="container">
 		<div class="row">
@@ -41,7 +45,7 @@ layout: homepage
 				<div class="family-member col-md-3 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
 					<img src="/assets/images/about-eliese.jpg" alt="" class="img-rounded">
 					<h4>Eliese</h4>
-					<p>My beautiful, loving, and supportive wife</p>
+					<p>My beautiful, loving, and supportive wife.</p>
 				</div>
 				<div class="family-member col-md-3 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
 					<img src="/assets/images/about-kyler.jpg" alt="" class="img-rounded">
@@ -114,7 +118,6 @@ layout: homepage
 				<p>
 					What I will say is that I've been a professional front-end web developer and web designer for going on 7 years now.
 					I enjoy what I do and I pride myself on producing clean, readable, maintainable code, as well as attractive and usable web designs.
-					<!-- I work well as part of a team, but I can also manage  -->
 					I excel in balancing my "right-brained" creative half with my "left-brained" logical half
 					<a href="#" data-toggle="popover" data-placement="top" title="" data-content="Yes, I know the left-brain/right-brain dichotomy has been mostly (or at least partly) disproven. Nevertheless, some people tend to favor creative tasks, while others prefer analytical and logical tasks."><sup>*</sup></a>
 					, and I'm obsessive about learning about new technologies and techniques.

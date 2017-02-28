@@ -12,7 +12,15 @@ body {
 	padding: 0;
 }
 body {
-	background: $offwhite url("/assets/images/backgrounds/blur03.jpg") no-repeat top center fixed;
+	//background: $offwhite url("/assets/images/backgrounds/blur03.jpg") no-repeat top center fixed;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#448ccb+0,2c2d35+100 */
+	background: #448ccb; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #448ccb 0%, #2c2d35 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  #448ccb 0%,#2c2d35 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  #448ccb 0%,#2c2d35 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448ccb', endColorstr='#2c2d35',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-attachment: fixed;
+	background-position: center; 
 
 	color: $blue-grey;
 	font-size: 1.6rem;
@@ -86,22 +94,22 @@ dir {
 		box-shadow: none;
 		font-size: 2em;
 		-webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        transition: all .3s ease;
-        min-height: 60px;
-        overflow: hidden;
-        margin: -65px 0 0;
-        padding: 0;
-  		.navbar-brand {
+		-moz-transition: all .3s ease;
+		transition: all .3s ease;
+		min-height: 60px;
+		overflow: hidden;
+		margin: -65px 0 0;
+		padding: 0;
+		.navbar-brand {
 			color: #f0f0f0;
 			color: $offwhite;
 			font-size: 2rem;
 			font-weight: 400;
 			line-height: 50px;
 			text-transform: uppercase;
-    		height: 50px;
-    		margin-top: 5px;
-    		padding: 0 0 0 10px;
+			height: 50px;
+			margin-top: 5px;
+			padding: 0 0 0 10px;
 			.dl-logo {
 				width: 50px;
 				margin-right: 10px;
@@ -128,10 +136,10 @@ dir {
 		border-bottom: 1px solid $blue-grey;
 		padding: 0;
 		-webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        transition: all .3s ease;
-        min-height: 60px;
-        margin: 0;
+		-moz-transition: all .3s ease;
+		transition: all .3s ease;
+		min-height: 60px;
+		margin: 0;
 	}
 	.navbar-toggle {
 		margin: 15px 15px 15px 0;
@@ -150,13 +158,13 @@ dir {
 	}
 	.navbar-default .navbar-nav > .active > a {
 		background-image: none;
-	    background-color: transparent;
-	    color: $blue;
-	    box-shadow: none;
+		background-color: transparent;
+		color: $blue;
+		box-shadow: none;
 	}
 	.navbar-default .navbar-nav > li > a:hover {
-	    background-color: transparent;
-	    color: $blue;
+		background-color: transparent;
+		color: $blue;
 	}
 	.body-bg {
 		background-color: $blue-grey;
@@ -179,7 +187,7 @@ dir {
 		}
 	}
 	.header {
-		background-color:rgba(30,30,30,0.35);
+		background-color:rgba(0,0,0,0.15);
 		border-bottom: 1px solid $white-brown;
 		height: 100%;
 		.headline-wrapper {
@@ -195,7 +203,27 @@ dir {
 			height: 320px;
 			margin-top: -140px;
 			top: 50%;
-			.dl-logo { width: 160px; height: 160px; }
+			&.load-animation {
+				.dl-logo{
+					animation: spin .5s linear infinite;
+					zoom: 75%;
+				}
+				h1, h2, .headline-nav {
+					opacity: 0; 
+					height: 0;
+					overflow: hidden;
+				}
+			}
+			.dl-logo { 
+				width: 160px; 
+				height: 160px; 
+				transition: all 1.5s ease-in-out;
+			}
+			h1, h2, .headline-nav {
+				opacity: 1;
+   				height: auto;
+   				transition: all 1.5s ease-in-out;
+			}
 			h1 {
 				font-size: 2.8rem;
 				font-weight: 500;
@@ -468,6 +496,24 @@ dir {
 				margin-bottom: 5px;
 				font-size: 1.4rem;
 			}
+		}
+		.panel {
+			overflow: hidden;
+			box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+			border: 0;
+			img {
+				width: 100%;
+			}
+			.panel-footer {
+				background: $midnight;
+				border: 0;
+				h3 {
+					color: $offwhite;
+				}
+			}
+		}
+		a.panel-link {
+			color: $offwhite;
 		}
 	}
 	.blog {
@@ -901,37 +947,70 @@ dir {
 	}
 
 	@media (max-width: 991px) {
-	    .navbar-header {
-	        float: none;
-	    }
-	    .navbar-toggle {
-	        display: block;
-	    }
-	    .navbar-collapse {
-	        border-top: 1px solid transparent;
-	        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-	    }
-	    .navbar-collapse.collapse {
-	        display: none!important;
-	    }
-	    .navbar-nav {
-	        float: none!important;
-	        margin: 7.5px -15px;
-	    }
-	    .navbar-nav>li {
-	        float: none;
-	    }
-	    .navbar-nav>li>a {
-	        padding-top: 10px;
-	        padding-bottom: 10px;
-	    }
-	    /* since 3.1.0 */
-	    .navbar-collapse.collapse.in {
-	        display: block!important;
-	    }
-	    .collapsing {
-	        overflow: hidden!important;
-	    }
+		.navbar-header {
+			float: none;
+		}
+		.navbar-toggle {
+			display: block;
+		}
+		.navbar-collapse {
+			border-top: 1px solid transparent;
+			box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+		}
+		.navbar-collapse.collapse {
+			display: none!important;
+		}
+		.navbar-nav {
+			float: none!important;
+			margin: 7.5px -15px;
+		}
+		.navbar-nav>li {
+			float: none;
+		}
+		.navbar-nav>li>a {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		/* since 3.1.0 */
+		.navbar-collapse.collapse.in {
+			display: block!important;
+		}
+		.collapsing {
+			overflow: hidden!important;
+		}
 	}
 
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+video#bgvid { 
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(/assets/video/lines-of-white.jpg) no-repeat;
+	background-size: cover; 
+}
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::--webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
 }
