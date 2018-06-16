@@ -423,16 +423,15 @@ dir {
 					//-ms-transition: width 2s ease-in-out 0;
 					transition: width 1.5s ease-out;
 				}
-				.html-css { width: 90%; }
-				.responsive-design { width: 80%; }
-				.jquery-javascript { width: 70%; }
-				.bootstrap { width: 80%; }
-				.adobe { width: 80%; }
-				.php { width: 60%; }
-				.databases { width: 50%; }
-				.mvc { width: 60%; }
-				.ui-ux { width: 70%; }
-				.lego { width: 80%; }
+				.lvl9 {width: 90%;}
+				.lvl8 {width: 80%;}
+				.lvl7 {width: 70%;}
+				.lvl6 {width: 60%;}
+				.lvl5 {width: 50%;}
+				.lvl4 {width: 40%;}
+				.lvl3 {width: 30%;}
+				.lvl2 {width: 20%;}
+				.lvl1 {width: 10%;}
 			}
 		}
 		.self-promotion {
@@ -763,6 +762,9 @@ dir {
 			}
 			.key {
 				width: 100%;
+				td {
+					font-style: italic;
+				}
 			}
 		}
 		.dl-logo {

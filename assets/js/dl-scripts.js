@@ -17,8 +17,8 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // animates the skillset level bars - requires jQuery-viewport-checker plugin
-$(function(){
-	$('.skillset').viewportChecker({
-		classToAdd: 'animate'
-	});
-});
+// $(function(){
+// 	$('.skillset').viewportChecker({
+// 		classToAdd: 'animate'
+// 	});
+// });

@@ -8,5 +8,16 @@
 
 {% include footer.html %}
 {% include scripts.html %}
+<script>
+    $(window).scroll(function () {
+        var hT = $('.skillset').offset().top,
+            hH = $('.skillset').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT + hH - wH)) {
+            $('.skillset').addClass('animate');
+        }
+    });
+</script>
 </body>
 </html>
